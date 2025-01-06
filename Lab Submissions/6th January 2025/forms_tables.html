@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms and Tables Demo</title>
+</head>
+<body>
+    <h1>HTML Forms Demo</h1>
+    
+    <form action="#" method="post">
+        <fieldset>
+            <legend>User Information</legend>
+            
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br><br>
+
+            <label for="birthdate">Date of Birth:</label><br>
+            <input type="date" id="birthdate" name="birthdate"><br><br>
+
+            <label for="subscription">Subscription Plan:</label><br>
+            <select id="subscription" name="subscription">
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+                <option value="enterprise">Enterprise</option>
+            </select><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <h1>HTML Tables Demo</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">Product</th>
+                <th colspan="2">Price</th>
+                <th rowspan="2">Stock</th>
+            </tr>
+            <tr>
+                <th>Retail</th>
+                <th>Discounted</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Product A</td>
+                <td>$20</td>
+                <td>$15</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Product B</td>
+                <td>$40</td>
+                <td>$30</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Product C</td>
+                <td>$60</td>
+                <td>$45</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Stock</td>
+                <td>100</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

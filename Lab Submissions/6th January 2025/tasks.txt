@@ -1,0 +1,6 @@
+1. Forms in HTML (use multiple tags, like most of them)
+
+2. Tables in HTML (use multiple tags, like most of them)
+[tbody, thead, tfoot, rowspan, colspan] -> new
+
+3. Also include audio and video elements in the page

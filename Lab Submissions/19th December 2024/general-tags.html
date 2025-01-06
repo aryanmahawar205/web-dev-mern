@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Images, Lists, and HTML Tags Example</title>
+</head>
+<body>
+
+    <!-- First Image (Relative Link) -->
+    <h2>Image from Local Machine</h2>
+    <img src="gemera.jpg" alt="A four seater hypercar! (relative link used from local machine)" height="400px" width="700px">
+    
+    <!-- Second Image (Absolute Link) -->
+    <h2>Image from the Internet</h2>
+    <img src="https://c4.wallpaperflare.com/wallpaper/404/470/400/koenigsegg-gemera-car-vehicle-supercars-hd-wallpaper-preview.jpg" 
+         alt="A four seater hypercar! (absolute link used from the internet)" height="400px" width="700px">
+
+    <!-- Simple bold heading -->
+    <h2><b>This is a bold heading!</b></h2>
+
+    <!-- Paragraph with different text formatting -->
+    <p>
+        HTML stands for <strong>Hypertext Markup Language</strong>, and it's basically the backbone of every webpage you see on the internet.
+        It structures all content, like text, images, and links, and makes it display in a way that’s easy for browsers to interpret.
+        For example, you can make text <i>italic</i> using the <code>&lt;i&gt;</code> tag, or you can make it <b>bold</b> with the <code>&lt;b&gt;</code> tag. 
+        <br>If you want to add emphasis to a word or phrase, you can use the <em>emphasis</em> tag, which usually renders text in italics as well.
+        It’s helpful for emphasizing important points without being too heavy-handed. 
+        Sometimes, you’ll need to make text <small>smaller</small> to fit certain design requirements, like in footnotes or disclaimers, or perhaps <big>larger</big> for headings, callouts, or highlighted terms to grab attention.
+        <br>In more technical scenarios, like mathematical equations or scientific formulas, you’ll probably see things like <sup>superscript</sup> (for powers and exponents, like in E = mc<sup>2</sup>) or <sub>subscript</sub> (for example, in H<sub>2</sub>O, which represents water).
+        <br>Want to underline some important text? You can use the <u>underline</u> tag.
+        If you’re keeping track of changes in a document, you can use <del>deleted text</del> to show something that’s been removed, and <ins>inserted text</ins> to indicate new content added.
+    </p>
+
+    <!-- Line break -->
+    <p>Here’s an example of how a line break works:</p>
+    <p>First line of text.<br>Second line of text appears after the break.</p>
+
+    <!-- Example of smaller text -->
+    <p>If you need to make text smaller for secondary information or fine print, try using the <small>small</small> tag.</p>
+
+    <!-- Discussing HTML entities -->
+    <h3>Let’s talk about HTML entities:</h3>
+    <p>HTML entities are helpful when you need to display special characters that either have a reserved meaning in HTML or can’t easily be typed directly on a keyboard.
+    For example, if you’re writing HTML and need to include symbols like less-than (<) or greater-than (>), you would use entities to prevent the browser from interpreting those symbols as actual tags.</p>
+
+    <!-- Example of special characters -->
+    <p>For example, the less-than symbol can be written as <code>&amp;lt;</code>, and the greater-than symbol is represented as <code>&amp;gt;</code>.</p>
+    
+    <!-- Displaying quotes and special characters -->
+    <p>If you want to include quotes in your content, you can use <code>&quot;</code> for double quotes and <code>&#39;</code> for single quotes.
+    These are useful when you’re working with strings of text in HTML attributes or inside JavaScript code.</p>
+
+    <p>Here are some more common HTML entities that you’ll likely encounter:</p>
+    <ul>
+        <li>&amp; (ampersand)</li>  <!-- Displays the & symbol -->
+        <li>&lt; (less-than sign)</li>  <!-- Displays the < symbol -->
+        <li>&gt; (greater-than sign)</li>  <!-- Displays the > symbol -->
+        <li>&quot; (double quote)</li>  <!-- Displays the " symbol -->
+        <li>&#39; (single quote)</li>  <!-- Displays the ' symbol -->
+        <li>&#x2600; (sun symbol, in hexadecimal)</li>  <!-- Displays the sun symbol -->
+        <li>&copy; (copyright symbol)</li>  <!-- Displays the copyright symbol -->
+        <li>&reg; (registered trademark symbol)</li>  <!-- Displays the registered trademark symbol -->
+        <li>&euro; (euro symbol)</li>  <!-- Displays the euro symbol -->
+    </ul>
+
+    <!-- Unordered list of items -->
+    <h3>Shopping List (Unordered List)</h3>
+    <ul>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Cheese</li>
+        <li>Apples</li>
+    </ul>
+
+    <!-- Ordered list (Default number type) -->
+    <h3>Steps to Create a Webpage</h3>
+    <ol>
+        <li>Choose a text editor</li>
+        <li>Write HTML code</li>
+        <li>Add CSS for styling</li>
+        <li>Publish your webpage online</li>
+    </ol>
+
+    <!-- Ordered list (Type A - Uppercase letters) -->
+    <h3>Ordered List with Uppercase Letters (Type A)</h3>
+    <ol type="A">
+        <li>Research</li>
+        <li>Design</li>
+        <li>Develop</li>
+        <li>Test</li>
+        <li>Deploy</li>
+    </ol>
+
+    <!-- Ordered list (Type a - Lowercase letters) -->
+    <h3>Ordered List with Lowercase Letters (Type a)</h3>
+    <ol type="a">
+        <li>Read the specifications</li>
+        <li>Write the code</li>
+        <li>Review the code</li>
+        <li>Deploy the application</li>
+    </ol>
+
+    <!-- Anchor Tag Example -->
+    <h3>Click the link below to visit an external site:</h3>
+    <a href="https://www.youtube.com" target="_blank">Direct to youtube.com?</a>
+
+</body>
+</html>

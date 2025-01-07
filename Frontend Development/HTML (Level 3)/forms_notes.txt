@@ -47,3 +47,27 @@ name attribute - it is the name of the form control.
 submitted with the form as part of a name/value pair
 eg.
 <input type="text" placeholder="enter name" id="username" name="username">
+
+checkbox as input element:
+<input type="checkbox" name="age" id="age" checked> (CHECKED MEANS IT WILL BE ON BY DEFAULT)
+<label for="age">I am 18+</label>
+
+radio button as input element:
+<input type="radio" name="fruit" id="apple" value="apple"> (THE VALUE ATTRIBUTE GETS EMBEDDED IN THE URL WHEN THE FORM IS SUBMITTED)
+<label for="apple">Apple</label>
+ALSO IS WE GOTTA GROUP THE RADIO BUTTONS TOGETHER, GOTTA KEEP THE NAME ATTRIBUTE THE SAME
+SAME THING WILL WORK FOR CHECKBOXES AS WELL
+
+dropdown as a select element:
+<select name="profession" id="profession">
+    <option value="stu">Student</option>
+    <option value="dev" selected>Developer</option> (SELECTED MEANS IT WILL BE SELECTED BY DEFAULT)
+</select>
+
+range as input element:
+<label for="volume">Volume</label>
+<input type="range" min="0" max="100" name="vol" step="10"> (STEP ATTRIBUTES ENSURES YOUR RANGE SLIDER INCREASES WITH A STEP SIZE OF 10 UNITS)
+
+textarea element:
+<label for="feedback">Please provide your valuable feedback:</label>
+<textarea id="feedback" name="feedback" rows="10" cols="20" placeholder="enter feedback..."></textarea>

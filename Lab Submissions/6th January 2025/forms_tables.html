@@ -3,87 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Forms and Tables Demo</title>
+    <title>HTML Forms, Tables, Audio, and Video</title>
 </head>
 <body>
-    <h1>HTML Forms Demo</h1>
-    
+
+    <h1>6th January Lab Task - Aryan Mahawar (23BDS1095)</h1>
+
+    <!-- Section for Forms -->
+    <h2>HTML Form</h2>
     <form action="#" method="post">
-        <fieldset>
-            <legend>User Information</legend>
-            
-            <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
 
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
 
-            <label for="gender">Gender:</label><br>
-            <input type="radio" id="male" name="gender" value="Male">
-            <label for="male">Male</label><br>
-            <input type="radio" id="female" name="gender" value="Female">
-            <label for="female">Female</label><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
 
-            <label for="birthdate">Date of Birth:</label><br>
-            <input type="date" id="birthdate" name="birthdate"><br><br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
 
-            <label for="subscription">Subscription Plan:</label><br>
-            <select id="subscription" name="subscription">
-                <option value="basic">Basic</option>
-                <option value="premium">Premium</option>
-                <option value="enterprise">Enterprise</option>
-            </select><br><br>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="india">India</option>
+        </select><br><br>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
 
-            <button type="submit">Submit</button>
-        </fieldset>
+        <input type="submit" value="Submit">
     </form>
 
     <hr>
 
-    <h1>HTML Tables Demo</h1>
-
+    <!-- Section for Tables -->
+    <h2>HTML Table</h2>
     <table border="1">
         <thead>
             <tr>
-                <th rowspan="2">Product</th>
-                <th colspan="2">Price</th>
-                <th rowspan="2">Stock</th>
-            </tr>
-            <tr>
-                <th>Retail</th>
-                <th>Discounted</th>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Salary</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Product A</td>
-                <td>$20</td>
-                <td>$15</td>
-                <td>50</td>
+                <td rowspan="2">101</td>
+                <td>John Doe</td>
+                <td>Manager</td>
+                <td>$5000</td>
             </tr>
             <tr>
-                <td>Product B</td>
-                <td>$40</td>
-                <td>$30</td>
-                <td>30</td>
+                <td>Jane Smith</td>
+                <td>Assistant Manager</td>
+                <td>$4000</td>
             </tr>
             <tr>
-                <td>Product C</td>
-                <td>$60</td>
-                <td>$45</td>
-                <td>20</td>
+                <td>102</td>
+                <td>Mark Johnson</td>
+                <td>Developer</td>
+                <td>$3500</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td colspan="3">Total Stock</td>
-                <td>100</td>
+                <td colspan="3">Total Salary</td>
+                <td>$12500</td>
             </tr>
         </tfoot>
     </table>
+
+    <hr>
+
+    <!-- Section for Audio -->
+    <h2>Audio Element</h2>
+    <audio controls>
+        <source src="sample-audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <!-- Section for Video -->
+    <h2>Video Element</h2>
+    <video width="320" height="240" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
 
 </body>
 </html>

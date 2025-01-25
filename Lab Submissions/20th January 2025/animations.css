@@ -1,0 +1,191 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Section Styling */
+.section {
+    margin: 30px 0;
+    padding: 30px;
+    border: 3px solid #ddd;
+    border-radius: 15px;
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 26px;
+    color: #333;
+}
+
+/* Section 1: Color Changing Square (div) */
+.square {
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    margin: 0 auto;
+    animation: changeColor 5s infinite;
+}
+
+@keyframes changeColor {
+    0% { background-color: red; }
+    25% { background-color: pink; }
+    50% { background-color: green; }
+    75% { background-color: yellow; }
+    100% { background-color: black; }
+}
+
+/* Section 2: Color Changing Square (SVG) */
+.svg-square {
+    fill: red;
+    margin: 0 auto;
+    animation: changeColorSVG 5s infinite;
+}
+
+@keyframes changeColorSVG {
+    0% { fill: red; }
+    25% { fill: pink; }
+    50% { fill: green; }
+    75% { fill: yellow; }
+    100% { fill: black; }
+}
+
+/* Section 3: Bouncing Ball */
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.ball {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    animation: bounce 4s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+    25% {
+        top: 0;
+        left: 100%;
+        transform: translateX(-100%);
+        background-color: blue;
+    }
+    50% {
+        top: 100%;
+        left: 100%;
+        transform: translateY(-100%) translateX(-100%);
+        background-color: green;
+    }
+    75% {
+        top: 100%;
+        left: 0;
+        transform: translateY(-100%);
+        background-color: yellow;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        background-color: purple;
+    }
+}
+
+/* Section 4: Moving Text with Font Changes */
+.text {
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    position: absolute;
+    animation: moveBottom 6s infinite alternate, moveRight 6s infinite alternate;
+    color: #2c3e50;
+}
+
+@keyframes moveBottom {
+    0% {
+        top: 0;
+        font-size: 14px;
+        font-family: 'Arial', sans-serif;
+        font-style: italic;
+    }
+    50% {
+        top: 50%;
+        font-size: 22px;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+    }
+    100% {
+        top: 100%;
+        font-size: 32px;
+        font-family: 'Courier New', monospace;
+        font-style: oblique;
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        left: 0;
+        font-size: 14px;
+        font-family: 'Arial', sans-serif;
+        font-style: italic;
+    }
+    50% {
+        left: 50%;
+        font-size: 22px;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+    }
+    100% {
+        left: 100%;
+        font-size: 32px;
+        font-family: 'Courier New', monospace;
+        font-style: oblique;
+    }
+}
+
+/* Section 5: Two Animations on One Element */
+.animated-element {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    animation: moveLeftRight 5s infinite alternate, changeColor 5s infinite alternate;
+}
+
+@keyframes moveLeftRight {
+    0% { left: 0; }
+    100% { left: 100%; }
+}
+
+@keyframes changeColor {
+    0% { background-color: red; }
+    50% { background-color: green; }
+    100% { background-color: blue; }
+}

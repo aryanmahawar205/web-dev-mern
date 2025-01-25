@@ -1,0 +1,62 @@
+/* General styling reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Container for the text */
+.text-container {
+    max-width: 900px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading styling */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+/* Styled paragraph with improved text properties */
+.styled-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;  /* Regular weight for better readability */
+    color: #2c3e50;    /* Slightly darker shade of blue for contrast */
+    letter-spacing: 0.5px;  /* Slight letter-spacing for clarity */
+    word-spacing: 3px;     /* Better word spacing for readability */
+    line-height: 1.8;      /* Increased line height for better legibility */
+    text-align: justify;   /* Justified text for even alignment */
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15); /* Soft, subtle shadow */
+    text-decoration: underline;
+    text-transform: none;  /* Removed uppercase for better readability */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 800px;  /* Constraining width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Add hover effect for the paragraph */
+.styled-paragraph:hover {
+    color: #e74c3c;  /* Color changes to red on hover */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}

@@ -1,0 +1,3 @@
+PS C:\Users\student> Set-ExecutionPolicy RemoteSign -Scope CurrentUser 
+PS C:\Users\student> npm -v
+10.9.0

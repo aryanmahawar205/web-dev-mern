@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <h2>JavaScript Form Validation</h2>
+    <form id="myForm">
+        <label for="name">Name (Letters only):</label>
+        <input type="text" id="name" required>
+        <br><br>
+
+        <label for="age">Age (Numbers only):</label>
+        <input type="text" id="age" required>
+        <br><br>
+
+        <label for="floatNumber">Floating Number:</label>
+        <input type="text" id="floatNumber" required>
+        <br><br>
+
+        <label for="alphanumeric">Alphanumeric:</label>
+        <input type="text" id="alphanumeric" required>
+        <br><br>
+
+        <label for="password">Password (min 8 characters):</label>
+        <input type="password" id="password" required>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="error-message" style="color: red;"></p>
+
+</body>
+</html>

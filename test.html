@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Statements Exercises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            margin-bottom: 20px;
+        }
+        input, button {
+            margin: 5px;
+        }
+        h3 {
+            color: green;
+        }
+        h4 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>1. Bank Loan Approval System</h2>
+        <input type="number" id="age" placeholder="Age">
+        <input type="number" id="salary" placeholder="Salary">
+        <input type="number" id="creditScore" placeholder="Credit Score">
+        <button onclick="checkLoanApproval()">Check Approval</button>
+        <h3 id="loanResult"></h3>
+    </div>
+
+    <div class="container">
+        <h2>2. Smart Traffic Light System</h2>
+        <input type="text" id="time" placeholder="Time (24-hour format)">
+        <input type="number" id="vehicleCount" placeholder="Vehicle Count">
+        <button onclick="determineGreenLightDuration()">Determine Duration</button>
+        <h3 id="trafficResult"></h3>
+    </div>
+
+    <div class="container">
+        <h2>3. Hotel Room Pricing System</h2>
+        <input type="text" id="month" placeholder="Month">
+        <input type="text" id="roomType" placeholder="Room Type">
+        <button onclick="calculateRoomPrice()">Calculate Price</button>
+        <h3 id="roomPriceResult"></h3>
+    </div>
+
+    <div class="container">
+        <h2>4. Movie Ticket Price Calculation</h2>
+        <input type="number" id="ageTicket" placeholder="Age">
+        <input type="text" id="showTime" placeholder="Show Time (24-hour format)">
+        <button onclick="calculateTicketPrice()">Calculate Price</button>
+        <h3 id="ticketPriceResult"></h3>
+    </div>
+
+    <div class="container">
+        <h2>5. Generate Pyramid of Numbers</h2>
+        <input type="number" id="pyramidRows" placeholder="Number of Rows">
+        <button onclick="generatePyramid()">Generate Pyramid</button>
+        <pre id="pyramidResult"></pre>
+    </div>
+
+    <div class="container">
+        <h2>6. Toll Tax Collection System</h2>
+        <input type="text" id="vehicleType" placeholder="Vehicle Type">
+        <input type="text" id="vipPass" placeholder="VIP Pass (yes/no)">
+        <button onclick="addVehicle()">Add Vehicle</button>
+        <button onclick="calculateTotalEarnings()">Calculate Total</button>
+        <h3 id="totalEarningsResult"></h3>
+    </div>
+
+    <div class="container">
+        <h2>7. Choose Your Favorite Season</h2>
+        <input type="radio" name="season" id="summer" value="Summer"> Summer <br>
+        <input type="radio" name="season" id="winter" value="Winter"> Winter <br>
+        <input type="radio" name="season" id="rainy" value="Rainy"> Rainy <br>
+        <input type="radio" name="season" id="autumn" value="Autumn"> Autumn <br>
+        <button type="button" onclick="checkButton()">Submit</button>
+        <h3 id="disp" style="color:green"></h3>
+        <h4 id="error" style="color:red"></h4>
+    </div>
+
+    <div class="container">
+        <h2>8. Choose Your Favorite Season (Using getElementById)</h2>
+        <input type="radio" name="season2" id="summer2" value="Summer"> Summer <br>
+        <input type="radio" name="season2" id="winter2" value="Winter"> Winter <br>
+        <input type="radio" name="season2" id="rainy2" value="Rainy"> Rainy <br>
+        <input type="radio" name="season2" id="autumn2" value="Autumn"> Autumn <br>
+        <button type="button" onclick="checkButtonById()">Submit</button>
+        <h3 id="disp2" style="color:green"></h3>
+        <h4 id="error2" style="color:red"></h4>
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

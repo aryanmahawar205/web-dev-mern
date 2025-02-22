@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Exercises</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f7fc;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    textarea, input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .error {
+      color: red;
+      margin-top: 10px;
+    }
+
+    .result {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #4CAF50;
+    }
+
+    select {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-top: 10px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .price-display {
+      font-size: 18px;
+      font-weight: bold;
+      color: #4CAF50;
+      margin-top: 20px;
+    }
+
+    /* Task 6: Z-Index Example */
+    .z-container {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background-color: #e0e0e0;
+      margin-top: 30px;
+    }
+
+    .box {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: rgba(255, 99, 71, 0.8); /* Tomato color */
+      border-radius: 10px;
+    }
+
+    .box1 {
+      top: 50px;
+      left: 50px;
+      z-index: 1;
+    }
+
+    .box2 {
+      top: 100px;
+      left: 100px;
+      z-index: 2;
+    }
+
+    .box3 {
+      top: 150px;
+      left: 150px;
+      z-index: 3;
+    }
+
+    /* Task 7: Fieldset and Legend */
+    .fieldset-container {
+      margin-top: 30px;
+    }
+
+    fieldset {
+      border: 2px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    legend {
+      font-weight: bold;
+      color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <h1>Multiple Exercises</h1>
+
+  <!-- Exercise 1: Convert to Uppercase -->
+  <div class="container">
+    <h2>Convert Text to Uppercase</h2>
+    <textarea id="uppercase-input" placeholder="Type your text here..."></textarea><br>
+    <button onclick="convertToUppercase()">Convert to Uppercase</button>
+  </div>
+
+  <!-- Exercise 2: Reverse the Text -->
+  <div class="container">
+    <h2>Reverse the Text</h2>
+    <textarea id="reverse-input" placeholder="Type your text here..."></textarea><br>
+    <button onclick="reverseText()">Reverse Text</button>
+  </div>
+
+  <!-- Exercise 3: Validate Input Length -->
+  <div class="container">
+    <h2>Input Length Validation</h2>
+    <form onsubmit="return validateInput()">
+      <textarea id="validate-input" placeholder="Enter at least 10 characters"></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="error-message" class="error"></div>
+  </div>
+
+  <!-- Exercise 4: Product Price Calculator -->
+  <div class="container">
+    <h2>Product Price Calculator</h2>
+    <label for="product-select">Select a product: </label>
+    <select id="product-select">
+      <option value="" disabled selected>--Choose a product--</option>
+      <option value="apple-1">Apple - $1</option>
+      <option value="banana-0.5">Banana - $0.5</option>
+      <option value="orange-0.75">Orange - $0.75</option>
+      <option value="grape-2">Grape - $2</option>
+    </select>
+    <div id="price-display" class="price-display"></div>
+  </div>
+
+  <!-- Exercise 5: Arrow Function Example -->
+  <div class="container">
+    <h2>Arrow Function Example: Double the Number</h2>
+    <label for="number-input">Enter a number:</label>
+    <input type="number" id="number-input" placeholder="Type a number">
+    <button onclick="doubleNumber()">Double the number</button>
+    <div id="result" class="result"></div>
+  </div>
+
+  <!-- Task 6: Z-Index Example -->
+  <div class="container">
+    <h2>Task 6: Z-Index Example</h2>
+    <p>This example demonstrates the usage of <code>z-index</code> to layer elements.</p>
+    <div class="z-container">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+    </div>
+  </div>
+
+  <!-- Task 7: Fieldset and Legend Example -->
+  <div class="container fieldset-container">
+    <h2>Task 7: Fieldset and Legend Example</h2>
+    <form>
+      <fieldset>
+        <legend>User Information</legend>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+        
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" placeholder="Enter your age"><br><br>
+        
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

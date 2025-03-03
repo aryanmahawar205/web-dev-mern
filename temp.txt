@@ -1,0 +1,24 @@
+-----------------to create and start react app-----------------
+PS D:\init-dev-sandbox\test-react> node -v
+v22.12.0
+PS D:\init-dev-sandbox\test-react> npm -v
+10.9.0
+PS D:\init-dev-sandbox\test-react> npx create-react-app sample
+Need to install the following packages:
+create-react-app@5.1.0
+Ok to proceed? (y) y
+---------------------------------------------------------------
+
+tasks (3rd march)
+
+1. concatenate strings
+2. convert text to uppercase/lowercase
+3. slice a string
+4. split string
+5. startsWith/endsWith
+6. reverse a string
+7. find minimum among 3 nos (using Math function)
+8. find maximum among 3 numbers - from user input field
+9. simple interest calculation - from user input field
+10. simple calculator
+11. Armstrong number
